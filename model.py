@@ -244,7 +244,7 @@ def build_transformer(src_vocab_size: int,tgt_vocab_size: int,src_seq_len:int ,t
         decoder_blocks.append(decoder_block)  
 
 
-    #create encoder and decoder
+    #create Encoder and decoder
     encoder=Encoder(nn.ModuleList(encoder_blocks))
     decoder=Decoder(nn.ModuleList(decoder_blocks))
 
