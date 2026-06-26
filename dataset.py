@@ -55,7 +55,7 @@ class BilingualDataset(Dataset):
             ]
         )
   
-        #Add EOS to the label(what we expect as output from the decoder)
+        #Add EOS to the label(what we expect as output from the Decoder)
         label=torch.cat(
             [
                 torch.tensor(dec_num_tokens,dtype=torch.int64)
